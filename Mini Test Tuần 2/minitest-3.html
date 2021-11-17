@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <table>
+        <tr>
+            <td>A=</td>
+            <td><input type="text" id="a"></td>
+        </tr>
+        <tr>
+            <td>B=</td>
+            <td><input type="text" id="b"></td>
+        </tr>
+        <tr>
+            <td>S=</td>
+            <td><h1 id="s"></h1></td>
+        </tr>
+        <tr>
+            <td colspan="2"><button type="button" onclick="multiplication()">multiplication(*)</button></td>
+        </tr>
+    </table>
+</form>
+</body>
+<script>
+    function multiplication() {
+        let so1 = document.getElementById('a').value;
+        let so2 = document.getElementById('b').value;
+        let result = so1 * so2;
+        document.getElementById("s").innerText = result;
+    }
+</script>
+</html>
