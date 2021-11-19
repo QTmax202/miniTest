@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = [];
+    let number = parseInt(prompt('Nhap so phan tu trong mang: '));
+    for (let i = 0; i < number; i++) {
+        let num = prompt('Nhap phan tu ' + (i + 1) + ' : ');
+        arr.push(num);
+    }
+    let sum = 0;
+    let a = prompt("Nhap A :")
+    for (let i = 0; i < arr.length ; i++) {
+        if( arr[i] === a ){
+            sum += 1;
+        }
+    }
+    document.write("Kieu du lieu cua A : "+(typeof a) +"<br>");
+    document.write("So luong phan tu giong A: "+sum);
+</script>
+</body>
+</html>
