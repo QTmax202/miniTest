@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let str1 = prompt("str1: ");
+    let str2 = prompt("str2: ");
+    let arr1 = str1.split("");
+    let arr2 = str2.split("");
+
+    function str(str1,str2) {
+        let isCheck = false;
+        if (str1.length <= str2.length) {
+            for (let i = 0; i < str2.length; i++) {
+                for (let j = 0; j < str1.length; j++) {
+                    if (str1[j] === str2[i+j]) {
+                        str1.splice(j, 1);
+                    }
+                }
+            }
+        }
+        if (str1.length < 1) {
+            isCheck = true;
+        }
+        return isCheck;
+    }
+
+    console.log(str(arr1, arr2));
+</script>
+</body>
+</html>
